@@ -1,0 +1,30 @@
+
+h1 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border: 0.01in solid rgb(160, 237, 243);
+    border-radius: 5px;
+    
+}
+h1,h2 {
+    color: rgb(206, 141, 20);
+}
+hr {
+    margin: 0 0.2cm 0.2cm 0.2cm;
+}
+li {
+    padding: 8px;
+}
+.meeting {
+    background-color:rgb(228, 225, 225);
+    display:block;
+    margin: 0 2% 0 2%;
+    padding: 15px;
+    border:10%;
+    border-color: rgb(160, 237, 243);
+    border-style: solid;
+}
+#meetings-list {
+    margin-left: 2%;
+}
