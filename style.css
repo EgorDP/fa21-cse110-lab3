@@ -33,9 +33,11 @@ li {
     padding-right: 4px;
     padding-bottom: 8px;
 }
+
 li:active{
     color: blue;
 }
+
 footer{
     background-color:rgb(185, 192, 192);
     color:yellow;
