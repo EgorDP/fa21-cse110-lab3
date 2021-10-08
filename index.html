@@ -75,21 +75,21 @@
         <form>
             <fieldset>
                 <label for="contact-type">Contact About:</label>
-                <select id="contact-type" name="contact-type">
+                <select id="contact-type" name="contact-type" class="round-button">
                     <option value="errors">errors</option>
                     <option value="suggestions">suggestions</option>
                     <option value="questions">questions</option>
                 </select>
                 <br> <br>
                 <p>Are you management?</p>
-                <input list="management">
+                <input list="management" class="round-button">
                 <datalist id="management">                 
                   <option value="Yes">
                   <option value="No">
                   <option value="Maybe">
                 </datalist>
                 <br> <br>
-                <textarea name="message" rows="15" cols="30">Enter your message here...</textarea>
+                <textarea name="message" rows="15" cols="30" class="round-button">Enter your message here...</textarea>
                 <br>
                 <button type="button" onclick="alert('Message sent')">Click to Send</button>
                 <br> <br>
