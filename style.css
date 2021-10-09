@@ -1,11 +1,13 @@
-
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 h1 {
     margin: auto;
     width: 50%;
     text-align: center;
     border: 0.01in solid rgb(160, 237, 243);
     border-radius: 5px;
-    
+    font-family: 'Akronim', cursive;
 }
 h1,h2,h3 {
     color: rgb(206, 141, 20);
@@ -27,6 +29,12 @@ h3 {
 hr {
     margin: 0 0.2cm 0.2cm 0.2cm;
 }
+h1 > h2 {
+    font-family: 'Arial';
+}
+h2.form {
+    color: blue;
+}
 li {
     padding-top:8px;
     padding-left: 4px;
@@ -34,6 +42,12 @@ li {
     padding-bottom: 8px;
 }
 li:active{
+    color: blue;
+}
+h2 ~ h3 {
+    font-family:"Cambria";
+}
+ol[type="A"]{
     color: blue;
 }
 footer{
@@ -52,6 +66,9 @@ form {
 .round-button {
     border-radius:5px;
 }
+form + .meeting {
+    color: orange;
+}
 .meeting {
     background-color:rgb(228, 225, 225);
     display:block;
@@ -60,6 +77,11 @@ form {
     border:10%;
     border-color: rgb(160, 237, 243);
     border-style: solid;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1px;
 }
 .audio-video{
     padding-top:10px;
@@ -97,4 +119,33 @@ form {
     height: 50%;
     position: static;
 }
+
+#note1 {
+    grid-area: header;
+    justify-self: start;
+}
+#note2 {
+    grid-area: f1;
+}
+#note3 {
+    grid-area: f2;
+}
+#note4 {
+    grid-area: f3;
+}
+#container {
+    display: grid;
+    grid-template-columns: 15% 15%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header . "
+        "f1 f2"
+        "f3 . ";
+}
+@media (min-width: 1000px) { 
+    #boot-logo {
+        width: 60%;
+        height: 60%;
+    }
+ }
 /* em for font size, vh and vw for viewport height and width,  */
